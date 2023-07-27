@@ -1,0 +1,81 @@
+/* Estilos generales para el body y el header */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lemon/Milk', sans-serif;
+}
+
+.header {
+    background-color: #e2e200;
+    padding: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: self-end;
+}
+
+/* Estilos para el contenido principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 100vh; /* Añadir esta línea para que el container ocupe toda la altura de la pantalla */
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #f5f118;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    color: #f5f118;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #f5f118;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ffff00;
+    color: #008457;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 3px solid #f5f118;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: #d1d100;
+    color: white;
+}

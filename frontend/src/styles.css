@@ -1,0 +1,22 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+/* necesito */
+
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/lemonmilk');
+
+
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+body {
+    background-color: #008457;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    font-family: 'Lemon', sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Nunito', sans-serif;
+  }

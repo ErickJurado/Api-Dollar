@@ -1,0 +1,46 @@
+<header class="header">
+  <nav>
+      <div class="container-fluid">
+          <a href="/hero"><img src="https://dollarcity.com/img/resources/logo.png" alt="Logo Dollarcity"></a>
+      </div>
+  </nav>
+</header>
+<div class="formulario">
+  <h2>Agregar Información de Cumplimiento Regulatorio</h2>
+
+  <form (submit)="crearComplianceRegulatory()">
+  
+  <p> Proveniencia de los fondos</p>
+  
+    <div>
+      <label for="member_pep">Confirmación de miembro PEP:</label>
+      <input type="text" id="member_pep" name="member_pep" [(ngModel)]="nuevoCompliance.member_pep" required>
+    </div>
+  
+    <div>
+      <label for="origin_funds">Origen de Fondos:</label>
+      <input type="text" id="origin_funds" name="origin_funds" [(ngModel)]="nuevoCompliance.origin_funds" required>
+    </div>
+  
+  <p> Persona conocida en razon social</p>
+  
+    <div>
+      <label for="name_acquaintance">Nombre:</label>
+      <input type="text" id="name_acquaintance" name="name_acquaintance" [(ngModel)]="nuevoCompliance.name_acquaintance" required>
+    </div>
+  
+    <div>
+      <label for="positition_acquaintance">Cargo:</label>
+      <input type="text" id="positition_acquaintance" name="positition_acquaintance" [(ngModel)]="nuevoCompliance.positition_acquaintance" required>
+    </div>
+  
+    <div>
+      <label for="relation_acquaintance">Tipo de relacion:</label>
+      <input type="text" id="relation_acquaintance" name="relation_acquaintance" [(ngModel)]="nuevoCompliance.relation_acquaintance" required>
+    </div>
+    <div>
+      <input type="hidden" id="provider_id" name="provider_id" value={{providerId}} [(ngModel)]="nuevoCompliance.provider_id" required>
+    </div>
+    <button type="submit">Siguiente</button>
+  </form>
+</div>

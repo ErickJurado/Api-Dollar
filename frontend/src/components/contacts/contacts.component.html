@@ -1,0 +1,58 @@
+<header class="header">
+  <nav>
+      <div class="container-fluid">
+          <a href="/hero"><img src="https://dollarcity.com/img/resources/logo.png" alt="Logo Dollarcity"></a>
+      </div>
+  </nav>
+</header>
+<div class="formulario">
+<h2>Agregar Contacto</h2>
+
+<form (submit)="crearContacto()">
+  <div>
+    <label for="contact_commercial">Contacto Comercial:</label>
+    <input type="text" id="contact_commercial" name="contact_commercial" [(ngModel)]="nuevoContacto.contact_commercial" required>
+  </div>
+
+  <div>
+    <label for="mail_commercial">Correo Comercial:</label>
+    <input type="mail" id="mail_commercial" name="mail_commercial" [(ngModel)]="nuevoContacto.mail_commercial" required>
+  </div>
+
+  <div>
+    <label for="positition_commercial">Cargoo Comercial:</label>
+    <input type="text" id="positition_commercial" name="positition_commercial" [(ngModel)]="nuevoContacto.positition_commercial" required>
+  </div>
+
+  <div>
+    <label for="cellphone_commercial">Telefono Comercial:</label>
+    <input type="text" id="cellphone_commercial" name="cellphone_commercial" [(ngModel)]="nuevoContacto.cellphone_commercial" required>
+  </div>
+
+  <div>
+    <label for="contact_finance">Contacto Finanzas:</label>
+    <input type="text" id="contact_finance" name="contact_finance" [(ngModel)]="nuevoContacto.contact_finance" required>
+  </div>
+
+  <div>
+    <label for="mail_finance">Correo Finanzas:</label>
+    <input type="mail" id="mail_finance" name="mail_finance" [(ngModel)]="nuevoContacto.mail_finance" required>
+  </div>
+
+  <div>
+    <label for="positition_finance">Cargo Finanzas:</label>
+    <input type="text" id="positition_finance" name="positition_finance" [(ngModel)]="nuevoContacto.positition_finance" required>
+  </div>
+
+  <div>
+    <label for="cellphone_finance">Telefono Finanzas:</label>
+    <input type="text" id="cellphone_finance" name="cellphone_finance" [(ngModel)]="nuevoContacto.cellphone_finance" required>
+  </div>
+  
+  <div>
+    <input type="hidden" id="provider_id" name="provider_id" value={{providerId}} [(ngModel)]="nuevoContacto.provider_id" required>
+  </div>
+
+  <button type="submit">Siguiente</button>
+</form>
+</div>

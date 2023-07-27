@@ -1,0 +1,52 @@
+<header class="header">
+  <nav>
+      <div class="container-fluid">
+          <a href="/hero"><img src="https://dollarcity.com/img/resources/logo.png" alt="Logo Dollarcity"></a>
+      </div>
+  </nav>
+</header>
+<div class="formulario">
+  <h2>Agregar Administradores, Directores y Accionistas</h2>
+
+  <form (submit)="crearAdministratorDirectorShareolder()">
+  
+  <p>Miembros de la Junta Directiva</p>
+  
+    <div>
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" [(ngModel)]="nuevoAdministrator.name" required>
+    </div>
+  
+    <div>
+      <label for="identification">Identificacion:</label>
+      <input type="text" id="identification" name="identification" [(ngModel)]="nuevoAdministrator.identification" required>
+    </div>
+  
+    <div>
+      <label for="positition">Cargo:</label>
+      <input type="text" id="positition" name="address_office" [(ngModel)]="nuevoAdministrator.positition" required>
+    </div>
+  
+  <p>Beneficiarios Finales con participación igual o superior al 5%</p>
+    
+    <div>
+      <label for="name_beneficiary">Nombre:</label>
+      <input type="text" id="name_beneficiary" name="name_beneficiary" [(ngModel)]="nuevoAdministrator.name_beneficiary" required>
+    </div>
+  
+    <div>
+      <label for="identification_beneficiary">Identificacion:</label>
+      <input type="text" id="identification_beneficiary" name="identification_beneficiary" [(ngModel)]="nuevoAdministrator.identification_beneficiary" required>
+    </div>
+  
+    <div>
+      <label for="percentage_participation">Porcentaje de Participacion:</label>
+      <input type="text" id="percentage_participation" name="percentage_participation" [(ngModel)]="nuevoAdministrator.percentage_participation" required>
+    </div>
+  
+    <div>
+      <input type="hidden" id="provider_id" name="provider_id" value={{providerId}} [(ngModel)]="nuevoAdministrator.provider_id" required>
+    </div>
+    <button type="submit">Siguiente</button>
+  </form>
+</div>

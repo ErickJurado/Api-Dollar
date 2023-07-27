@@ -1,0 +1,65 @@
+<header class="header">
+  <nav>
+      <div class="container-fluid">
+          <a href="/hero"><img src="https://dollarcity.com/img/resources/logo.png" alt="Logo Dollarcity"></a>
+      </div>
+  </nav>
+</header>
+
+<div class="formulario"> 
+<h2>Agregar datos Representante Legal</h2>
+
+<form (submit)="crearRepresentanteLegal()">
+  <div>
+    <label for="name_representative">Nombre:</label>
+    <input type="text" id="name_representative" name="name_representative" [(ngModel)]="nuevoRepresentante.name_representative" required>
+  </div>
+
+  <div>
+    <label for="document_identity">Documento de Identidad:</label>
+    <input type="text" id="document_identity" name="document_identity" [(ngModel)]="nuevoRepresentante.document_identity" required>
+  </div>
+
+  <div>
+    <label for="address_office">Dirección de Oficina:</label>
+    <input type="text" id="address_office" name="address_office" [(ngModel)]="nuevoRepresentante.address_office" required>
+  </div>
+
+  <div>
+    <label for="city">Ciudad:</label>
+    <input type="text" id="city" name="city" [(ngModel)]="nuevoRepresentante.city" required>
+  </div>
+
+  <div>
+    <label for="phone_company">Telefono Empresa:</label>
+    <input type="text" id="phone_company" name="phone_company" [(ngModel)]="nuevoRepresentante.phone_company" required>
+  </div>
+
+  <div>
+    <label for="mail_representative">Correo Electronico:</label>
+    <input type="mail" id="mail_representative" name="mail_representative" [(ngModel)]="nuevoRepresentante.mail_representative" required>
+  </div>
+
+  <div>
+    <label for="country">Pais:</label>
+    <input type="text" id="country" name="country" [(ngModel)]="nuevoRepresentante.country" required>
+  </div>
+
+  <div>
+    <label for="cellphone">Celular:</label>
+    <input type="text" id="cellphone" name="cellphone" [(ngModel)]="nuevoRepresentante.cellphone" required>
+  </div>
+
+  <div>
+    <label for="position_job">Cargo:</label>
+    <input type="text" id="position_job" name="position_job" [(ngModel)]="nuevoRepresentante.position_job" required>
+  </div>
+
+  <div>
+    <input type="hidden" id="provider_id" name="provider_id" value={{providerId}} [(ngModel)]="nuevoRepresentante.provider_id" required>
+  </div>
+  <!-- Agrega más campos según tus necesidades -->
+
+  <button type="submit">Siguiente</button>
+</form>
+</div>
